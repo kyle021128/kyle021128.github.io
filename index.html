@@ -8,13 +8,32 @@
             border-collapse: collapse;
             padding: 8px;
         }
+        img{width:100px;}
         </style>
+
+        <script>
+            function func()    {
+                document.getElementById('kyle').style.color = 'green';
+
+
+
+            }
+
+
+        </script>
+
+    
+
+       
 </head>
 <body>
-<h3>
+<h3 id="kyle">
     환영합니다! 20220351 선은성의 홈페이지입니다
-</h3>
-<h3>은성이의 2학년 1학기 시간표</h3>
+</h3> <button onclick="func();" type="button">눌러봐!</button>
+
+<h3 onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">은성이의 2학년 1학기 시간표</h3> 
+
+
 <table>
     <tr>
         <th></th>
@@ -148,6 +167,11 @@
     <a href="kyle.html">[국제 페스티벌 안내]</a>
     <a href="hoseo.html">[호서 야간개장 안내]</a>
     <a href="kyle5.html">[세일 안내장]</a>
-    <a href="ex_table.html">[월간일정표]</a>
+    <a href="ex_table.html">[월간일정표]</a> <br>
+
+<img onmouseover="this.style.width='200px'" onmouseout="this.style.width='100px'" src="호서로고.jpg">
 </body>
 </html>
+
+
+
