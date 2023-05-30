@@ -3,176 +3,284 @@
 <head>
     <meta charset="utf-8">
     <style>
+        
+        * {background-color: rgb(200, 235, 223);
+            font-family: 'NeoDunggeunmoPro-Regular';}
+
+            @font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
         table, tr, th, td {
-            border: solid 1px black;
+            border: solid 2px black;
             border-collapse: collapse;
             padding: 8px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+
         }
-        img{width:100px;}
-        </style>
+        img{width:300px;}
 
-        <script>
-            function func()    {
-                document.getElementById('kyle').style.color = 'green';
+        header {
+            width:1250px;
+            height:100px;
+            margin-top:10px;
+            border:solid 0px black;
+            font-size: 50px;
+            text-align: center;
+            padding-top : 40px;
+        }
+
+       nav {
+            width:1250px;
+            height:70px;
+            margin-top:10px;
+            border:solid 0px black;
+            text-align: center;
+            padding-top : 10px;
+            font-size: 20px;
+        
+        }
+
+        section {
+            width:900px;
+            height: 450px;
+            margin-top:10px;
+            border:solid 0px black;
+            float :left;
+        }
+
+        aside{
+            width:300px;
+            height:550px;
+            float : left;
+            margin-top :10px;
+            margin-left: 10px;
+            border :solid 0px black;
+        }
+        .clear{clear:both;}
+
+        footer{
+            width:1600px;
+            height:200px;
+            float : left;
+            margin-left: 10px;
+            border :solid 0px black; 
+            font-size: 20px;
+            background-color: rgb(51, 181, 236);
+            border-radius: 30px;
+        }
+
+
+        #디 {background-color: red;}
+        #경{background-color: orange;}
+        #천{background-color: yellow;}
+        #기{background-color: green;}
+        #대{background-color: blue;}
+        #관{background-color: blueviolet;}
+        #웹{background-color: purple;}
+
+        #kyle {text-align: center;}
+        #none {list-style-type: none;}
+        .aside {float: left; border: solid 3px rgb(50, 16, 40);
+              font-size: 25px; margin-left: 30px; margin-top:1px; 
+              width: 300px; height: 440px;}
+        
+        a:visited {text-decoration: none; color: black;}
+        a:hover {text-decoration: none; color: rgb(214, 138, 45);} 
+        a:link {text-decoration: none; color:black;}
+
+        span {text-decoration: underline;}
 
 
 
-            }
-
-
-        </script>
-
-    
-
-       
+        </style>    
 </head>
 <body>
-<h3 id="kyle">
-    환영합니다! 20220351 선은성의 홈페이지입니다
-</h3> <button onclick="func();" type="button">눌러봐!</button>
+<header>
+ @sunflower_kyle
+</header>
 
-<h3 onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">은성이의 2학년 1학기 시간표</h3> 
+<nav>
+    <a href="form_test.html">회원가입</a>ㅣ
+    <a href="rubato.html">루바토 펜션 안내</a>ㅣ
+    <a href="kyle.html">국제 페스티벌 안내</a>ㅣ
+    <a href="hoseo.html">호서 야간개장 안내</a>ㅣ
+    <a href="kyle5.html">세일 안내장</a>ㅣ
+    <a href="ex_table.html">월간일정표</a>ㅣ
+    <a href="ex2_menus.html">쇼핑몰 판매 목록</a> <br>
+</nav>
 
-
-<table>
-    <tr>
-        <th></th>
-        <th>월</th> 
-         <th>화</th> 
-         <th>수</th> 
-         <th>목</th>
-         <th>금</th>    
-         <th>토</th>
-         <th>일</th>
-         
-    </tr>
-    <tr>
-        <td>1교시</td>
-        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>  
-        <td> </td>  
-        <td> </td> 
-        <td> </td>
-        <td></td>
-        <td></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td>2교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td rowspan="2">천안의 이해</td> 
-        <td rowspan="2">디지털콘텐츠<br>비즈니스개론</td>
-        <td rowspan="2">웹프로그래밍</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>3교시</td>
-        <td> </td>  
-        <td></td>
-        <td></td> 
-        <td></td>
-    </tr>
-    <tr>
-        <td>4교시</td>
-        <td> </td>  
-        <td>디지털콘텐츠<br>비즈니스개론 </td>  
-        <td> </td> 
-        <td>대학영어회화2 </td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>5교시</td>
-        <td> </td>  
-        <td rowspan="2">경영정보시스템 </td>  
-        <td> 경영정보시스템</td> 
-        <td> </td>
-        <td></td>
-        <td></td>
-       
-    </tr>
-    <tr>
-        <td>6교시</td>
-        <td> </td>  
-        <td></td>  
-        <td> </td> 
-        <td></td>
-        <td></td>
-        <td></td>
+<section>
+    <table>
+        <tr>
+            <th></th>
+            <th>월</th> 
+             <th>화</th> 
+             <th>수</th> 
+             <th>목</th>
+             <th>금</th>    
+             <th>토</th>
+             <th>일</th>
+             
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>  
+            <td> </td>  
+            <td> </td> 
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td rowspan="2" id="천">천안의 이해</td> 
+            <td rowspan="2" id="디">디지털콘텐츠<br>비즈니스개론</td>
+            <td rowspan="2" id="웹">웹프로그래밍</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3교시</td>
+            <td> </td>  
+            <td></td>
+            <td></td> 
+            <td></td>
+        </tr>
+        <tr>
+            <td>4교시</td>
+            <td> </td>  
+            <td id="디">디지털콘텐츠<br>비즈니스개론 </td>  
+            <td> </td> 
+            <td id="대">대학영어회화2 </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5교시</td>
+            <td> </td>  
+            <td rowspan="2" id="경">경영정보시스템 </td>  
+            <td id="경"> 경영정보시스템</td> 
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td>6교시</td>
+            <td> </td>  
+            <td></td>  
+            <td> </td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>7교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td> </td> 
+            <td rowspan="2" id="관"> 관광의 이해</td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td>8교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td> </td> 
+            <td> </td>
+            <td></td>
+            <td></td>
         
-    </tr>
-    <tr>
-        <td>7교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td> </td> 
-        <td rowspan="2"> 관광의 이해</td>
-        <td></td>
-        <td></td>
-       
-    </tr>
-    <tr>
-        <td>8교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td> </td> 
-        <td> </td>
-        <td></td>
-        <td></td>
-    
-    </tr>
-    <tr>
-        <td>9교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td rowspan="2"> 기업가정신과창업</td> 
-        <td> </td>
-        <td></td>
-        <td></td>
-       
-    </tr>
-    <tr>
-        <td>10교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td> </td> 
-        <td> </td>
-        <td>관광의 이해</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>11교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td> </td> 
-        <td> </td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>12교시</td>
-        <td> </td>  
-        <td> </td>  
-        <td> </td> 
-        <td> </td>
-        <td>웹프로그래밍</td>
-        <td></td>
-    </tr>
-    
-    </table>
-    <a href="form_test.html">회원가입</a>
-    <a href="rubato.html">[루바토 펜션 안내]</a>
-    <a href="kyle.html">[국제 페스티벌 안내]</a>
-    <a href="hoseo.html">[호서 야간개장 안내]</a>
-    <a href="kyle5.html">[세일 안내장]</a>
-    <a href="ex_table.html">[월간일정표]</a> <br>
-    <a href="ex2_menus.html">[쇼핑몰 판매 목록]</a> <br>
+        </tr>
+        <tr>
+            <td>9교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td rowspan="2" id="기"> 기업가정신과창업</td> 
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td>10교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td> </td> 
+            <td> </td>
+            <td id="관">관광의 이해</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td> </td> 
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12교시</td>
+            <td> </td>  
+            <td> </td>  
+            <td> </td> 
+            <td> </td>
+            <td id="웹">웹프로그래밍</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        </table>
+</section>
 
-<img onmouseover="this.style.width='200px'" onmouseout="this.style.width='100px'" src="호서로고.jpg">
+<aside>
+    <h3 id="kyle">⭐내가 하는 게임!⭐</h3>
+
+<a href="https://www.leagueoflegends.com/ko-kr/">
+<img src="다운로드.jpg"><br>
+리그오브레전드 바로가기 ></a> <br><br>
+
+<a href="https://fifaonline4.nexon.com/main/index">
+<img src="다운로드 3.jpg"><br>
+피파온라인4 바로가기 ></a>
+
+</aside>
+<div>
+<aside class="aside">
+    
+    <ul id="none">
+        <li>⭐<span>은성이 의 목표</span>⭐</li><br>
+        <li><input type="checkbox"> 토익 공부 하기</li><br>
+        <li><input type="checkbox"> 기말고사 공부 하기</li><br>
+        <li><input type="checkbox"> 운동 꾸준히 하기</li><br>
+        <li><input type="checkbox"> 일 열심히 하기</li>
+      
+    </ul>
+</aside>
+</div>
+
+<footer class="clear">
+<br>
+&nbsp; 학교 : 호서대학교 천안캠퍼스<br>
+&nbsp; 학과 : 디지털기술경영학과<br>
+&nbsp; 학번 : 20220351
+
+</footer>
 </body>
 </html>
-
-
-
